@@ -33,10 +33,9 @@ def load_datasets(base_dir):
 # Load all datasets
 datasets = load_datasets('/home/master1/gis/2017')
 
+
 # Plot the 'LST' data from each dataset
-for i, dataset in enumerate(datasets):
-    # Get the 'LST' variable
-    lst = dataset.variables['LST'][:]
+for i, lst in enumerate(datasets):
 
     # Create a new matplotlib figure
     plt.figure(figsize=(10, 10))
@@ -47,3 +46,4 @@ for i, dataset in enumerate(datasets):
 
     # Show the plot
     plt.show()
+
