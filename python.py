@@ -1,7 +1,7 @@
 import os
 import glob
 import netCDF4 as nc
-
+import matplotlib.pyplot as plt
 def load_datasets(base_dir):
     data = []
 
